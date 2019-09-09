@@ -1,0 +1,62 @@
+.pricingItem {
+  font-family: 'Oswald';
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon {
+  position: relative;
+  height: 170px;
+}
+
+.icon::before {
+  content: url('https://raw.githubusercontent.com/goitacademy/react-homework/master/homework-01/pricing-plan/assets/bronze-icon.png');
+  /* position: absolute;
+  bottom: 0;
+  left: 50%; */
+  height: 170px;
+}
+
+.label {
+  text-align: center;
+  font-size: 35px;
+  font-weight: 400;
+  padding-bottom: 16px;
+}
+
+.capacity {
+  color: #b4b4b4;
+  font-size: 17px;
+  padding-bottom: 14px;
+  text-align: center;
+}
+
+.description {
+  color: #b4b4b4;
+  font-size: 15px;
+  padding-bottom: 38px;
+  text-align: center;
+}
+
+.price {
+  color: #7f8c8d;
+  font-size: 40px;
+  padding-bottom: 34px;
+  text-align: center;
+}
+
+.button {
+  box-shadow: none;
+  background-color: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+  font-size: 15px;
+  width: 65%;
+  line-height: 46px;
+  border-radius: 2px;
+  cursor: pointer;
+}
