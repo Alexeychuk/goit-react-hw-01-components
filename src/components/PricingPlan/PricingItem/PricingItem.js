@@ -1,14 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
+
 import styles from './PricingItem.module.css';
 
-const StyledPricingIcon = styled.i`
-  :before {
-    content: url(${props => props.icon});
-  }
-  height: 174px;
-`;
+import StyledPricingIcon from './StyledPricingIcon';
 
 const PricingItem = ({ label, icon, capacity, price, description }) => {
   return (

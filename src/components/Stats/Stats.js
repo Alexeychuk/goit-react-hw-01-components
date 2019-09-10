@@ -2,16 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './Stats.module.css';
 
-const Stats = ({ title, stats }) => {
-  const getRandomColor = () => {
-    const letters = '0123456789ABCDEF';
-    let color = '#';
-    for (let i = 0; i < 6; i += 1) {
-      color += letters[Math.floor(Math.random() * 16)];
-    }
-    return color;
-  };
+import getRandomColor from '../../helpers/getRandomColor';
 
+const Stats = ({ title, stats }) => {
   return (
     <section className={styles.statsSection}>
       {title && <h2 className={styles.title}>{title}</h2>}
